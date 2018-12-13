@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'login/css/style.css' %}">
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="main2">
+        <div class="topbar">
+            <a class="btn btn-secondary" href="/logout">Log out</a>
+        </div>
+        <div class="container2">
+            <h1>Welcome, {{ user.first_name }}</h1><br>
+        </div>
+    </div>
+</body>
+</html>
